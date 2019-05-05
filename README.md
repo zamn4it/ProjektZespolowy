@@ -23,3 +23,6 @@ Panel logowania
 
 Panel dodawania firm
 ![alt text](https://i.imgur.com/6k0KEZo.png)
+
+# Instrukcja c.d.
+1. Ja do uprawnień w bazie danych musiałem jeszcze nadać dla użytkownika localhost hasło: haslo

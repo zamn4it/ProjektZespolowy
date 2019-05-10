@@ -24,5 +24,11 @@
 		?>
 		<br><br><form action="search.php" method="post"><input type="text"  class="textbox" name="szukajka"/><input type="submit"  name="submit" value="Szukaj"/></form>
 		</td>
+		<td valign="top">
+		<font color="white"><?php
+		include('functions.php');
+		echo currentdate();
+		?>
+		</td>
 	</tr>
 </table>

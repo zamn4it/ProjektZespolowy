@@ -1,4 +1,4 @@
-ï»¿<html>
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="author" content="Zarzadzanie">
@@ -17,7 +17,8 @@
 		<font color="white" size="4">Baza Firm
 		</td>
 		<td valign="top">
-		<a href="index.php">Menu GÅ‚Ã³wne</a> || <a href="admin.php">Admin</a>
+		<a href="index.php">Menu G³ówne</a> || <a href="admin.php">Admin</a> || <a href="excel_export.php">export</a>
+
 		<?php
 		session_start();
 		if(isset($_SESSION['username'])){ echo ' || <a href="logout.php">Wyloguj</a>';}

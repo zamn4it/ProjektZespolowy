@@ -8,7 +8,7 @@ $result = $link->query($sql);
 echo '
 <center>
 <table width="1500"><tr><td>
-<table class="blueTable">
+<table class="table table-hover">
 <thead>
 <tr>
 ';

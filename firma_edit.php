@@ -1,7 +1,6 @@
 ﻿<?PHP
 include('config.php');
 include('header.php');
-include('functions.php');
 $numer = ($_GET['numer']);
 ?>
 

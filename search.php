@@ -1,15 +1,7 @@
 ﻿<?PHP
 include('config.php');
 include('header.php');
-include('functions.php');
-?>
 
-
-
-
-
-
-<?PHP
 if (isset($_POST['szukajka'])){
 $szukaj = $_POST['szukajka'];
 
@@ -25,13 +17,9 @@ tel LIKE '%$szukaj%'
 ORDER BY nazwa";
 $result = $link->query($sql);
 
-
-
-
 echo '
-<center>
-<table width="1500"><tr><td>
-<table class="blueTable">
+<div class="table-responsive">
+<table class="table table-dark">
 <thead>
 <tr>
 ';
@@ -61,7 +49,7 @@ echo '
 <td>'.$row1["nazwa"].'</td>
 <td>'.$row1["wlasciciel_imie"].' '.$row1["wlasciciel_nazwisko"].'</td>
 <td>'.$row1["NIP"].'</td>
-<td><a href="'.$row1["strona"].'" target="blank"><font color="blue">'.$row1["strona"].'</blue></a></td>
+<td><a class="website-link" href="'.$row1["strona"].'" target="blank">'.$row1["strona"].'</a></td>
 <td>'.$row1["opis"].'</td>
 <td>'.$row1["tel"].'</td>
 </tr>
@@ -72,6 +60,7 @@ echo '
 echo '
 </tbody>
 </table>
+</div>
 </center>
 ';
 

@@ -1,7 +1,6 @@
 ﻿<?PHP
 include('config.php');
 include('header.php');
-include('functions.php');
 $numer = ($_GET['numer']);
 ?>
 
@@ -21,7 +20,8 @@ $row2 = $result->fetch_assoc();
 
 echo '
 <table><tr><td>
-<table class="blueTable">
+<div class="table-responsive">
+<table class="table table-dark">
 <thead>
 <tr>
 <th>Logo</th>
@@ -36,13 +36,13 @@ echo '
 <td>'.$row2["nazwa"].'</td>
 <td>'.$row2["wlasciciel_imie"].' '.$row2["wlasciciel_nazwisko"].'</td>
 <td>'.$row2["NIP"].'</td>
-<td><a href="'.$row2["strona"].'" target="blank"><font color="blue">'.$row2["strona"].'</blue></a></td>
+<td><a class="website-link" href="'.$row2["strona"].'" target="blank">'.$row2["strona"].'</a></td>
 <td>'.$row2["opis"].'</td>
 <td>'.$row2["tel"].'</td>
 </tr>
 </tbody>
 </table>
-</td></tr></table>';
+</div>';
 ?>
 
 <center><font size="12" color="white">Jesteś pewien/pewna że chces usunąć tą firmę?</font></center>
